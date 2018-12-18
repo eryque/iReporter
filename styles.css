@@ -1,0 +1,411 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bak4.jpg");
+    
+}
+* {box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+header {
+    
+    overflow: hidden;
+    background-color:blue;
+    
+    
+}
+header li a{
+  font-size: 16px;
+
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-color:white;
+    padding-top: 0;
+    
+}
+header .lgo {
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    width: 150px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    color: red;
+}
+.maindiv {
+    width: 80%;
+    display: none;
+    float: left;
+    text-align: right;
+    background-color:blue;
+   
+}
+.maindiv ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.maindiv ul li:hover {
+    background: rgb(8, 230, 60);
+    color: #fff;
+}
+
+
+.dropdwnbtn {
+  background-color: greenyellow;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdwnbtn:hover, .dropdwnbtn:focus {
+  background-color: #2980B9;
+}
+
+.navmenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    display: block;
+}
+
+.maindiv2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.maindiv2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* fsign up form styles */
+hr {
+    border: 3px solid #07ebe3;
+    margin-bottom: 25px;
+  }
+.mainform {
+    background-color: #fefefe;
+    margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    padding: 16px;
+  }
+   /* Add padding to form container elements */
+   .formcontainer{
+    padding: 10px;
+    width:100%;
+    margin-top:0;
+    border-radius: 50px;
+
+
+  }
+
+   /* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #918c8c;
+   
+  }
+  /* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn, .loginbtn {
+    float: left;
+    width: 50%;
+    border-radius: 10px;
+  }
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+   
+  }
+  button:hover {
+    opacity:1;
+  }
+/* Clear floats */
+.subcncel::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* styling  a login page*/
+  .logform, .loginmain {
+    padding: 10px;
+    width:70%;
+    align-content: center;
+    margin-left:100px;
+    margin-right:100px;
+
+  }
+  .loginmain {
+    padding: 10px;
+    width:100%;
+    align-content: center;
+    margin:50px;
+    
+  }
+  .loginmain h1{
+    text-align: center;
+  }
+  small{
+    text-align: center;
+  }
+/* css for main login page */
+.cretflag{
+  width: 380px;
+  padding: 5% 0 0; 
+  margin: auto;
+  position: relative;
+  background-color: blue;
+   /* margin: 0 auto 100px; */
+   padding: 40px;
+    text-align: center;
+
+}
+.cretflag input{
+  outline: darkgrey;
+  background: #e0e0e0;
+  width: 100%;
+  margin: 0 0 5px; 
+  border: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/*  styling redflag */
+.text{
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+.textarea{
+  outline: darkgrey;
+  background: #e0e0e0;
+  width: 100%;
+  margin: 0 0 5px; 
+  border: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+} 
+.hedtext, .hed1text{
+  color:blue;
+  font-size: 15px;
+  text-align: center;
+}
+.cretflag .location{
+  width: 100%;
+}
+.cretflag .latd{
+  color: #bf55ec;
+  width: 48%;
+}
+.cretflag .longtd{
+  color: #bf55ec;
+  width: 48%;
+}
+.option{
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 13px; 
+
+}
+.subbtn{
+  background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+}
+/* styling the user profile page */
+.usermain{
+  width: 90%;
+  margin-top: 50px;
+  padding: 5% 0 0; 
+  margin: auto;
+}
+
+.cont-left img{
+  width: 45%;
+  height: 20px;
+}
+.cont-rite img{
+  width: 45%;
+  height: 50px;
+}
+
+.cont-rite{
+  background-color: skyblue;
+  opacity: 0.89;
+  float: right;
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+.cont-left{
+  background-color: rgba(106, 201, 216, 0.6);
+  opacity: 0.89;
+  float: left;
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+
+/* intervention */
+
+.main-content{
+  width: 80%;
+  margin-top: 50px;
+  padding: 5% 0 0; 
+  margin: auto;
+}
+
+.box-left img{
+  width: 45%;
+  height: 20px;
+}
+.box-right img{
+  width: 45%;
+  height: 50px;
+}
+
+.box-right{
+  background-color: rgba(114, 219, 209, 0.6);
+  opacity: 0.89;
+  float: right;
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+.box-left{
+  background-color: rgba(19, 212, 226, 0.6);
+  opacity: 0.89;
+  float: left;
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+.btn-edit{
+  padding: 5px 15px;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 5px;
+  border: 1px solid #bf55ec;
+}
+/* styling the userprofile page(profile.html) */
+.user-info{
+  float: left;
+  width: 25%;
+
+}
+.biodata{
+  display: block;
+  
+}
+.user-info img{
+  position: relative;
+  /* width: 50%; */
+  padding: 10px;
+  background-color: white;
+  border: 1.5px solid silver;
+}
+.main-profilediv{
+  background-color: blue;
+  height: 100%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 65%; 
+  padding: 2% 15px; 
+  margin: auto;
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+  box-sizing: content-box;
+}
+.user-profile{
+  float: center;
+
+}
+
+.view-btn2{ 
+  border: 1px solid #fefefe;
+  border-radius: 200px;
+  
+}
+.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.navmenu a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+@media screen and (min-width:700px){
+    .navmenu {
+        display: none;
+    }
+    .maindiv {
+        display: inline-block;
+    }
+    .wrapper {
+        background: rgb(156, 145, 145);
+      
+    }
+}

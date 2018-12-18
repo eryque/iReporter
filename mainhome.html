@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>irepoter</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+<body>
+        <header>
+                <div class="lgo">iReporter</div>
+                <div class="maindiv">
+                    <ul>
+                        <li><a href="mainhome.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="administrator.html">Administration</a></li> 
+                        <li><a href="mainhome.html">Create</a></li>
+                        <li><a href="flagedusers.html">View</a></li>
+                        <li><a href="index.html">LOGOUT</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="navmenu">
+                    <button onclick="myFunction()" class="dropdwnbtn">&#9776;</button>
+                    <div id="mymenu" class="maindiv2">
+                            <ul>
+                                    <li><a href="flagedusers.html"></a>Home</a></li>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="flagedusers.html">Create</a></li>
+                                    <li><a href="administrator.html">Administration</a></li> 
+                                    <li><a href="flagedusers.html">View</a></li>
+                                    <li><a href="index.html">LOGOUT</a></li>
+                                    
+                                </ul>
+                </div>
+                </div>
+            </header>
+            <hr>
+            <!-- this dive creates flag and intervention -->
+          
+            <div class="cretflag">
+                    <form class="cretform">
+                              <h2 class="text">Please Create Your Record</h2>
+                              <input type="text" placeholder="Enter Record Title"/><br>
+                              <input type="text" placeholder="Enter Location" /><br>
+                              <input type="datetime" placeholder="Date" /><br>
+                              <textarea class="textarea" placeholder="description"></textarea>
+      
+                              <label class="text">Geolocation: </label>
+                               <div class="location">
+                              <input class="latd" type="text" placeholder="Latitude" required/>
+                              <input class="longtd" type="text" placeholder="Longitude" required/>
+                              </div>
+                            <!-- the User can Upload an image or video from this div -->
+                              <label class="text">Upload image or Video: </label><br>
+                              <input type="file" name="foto" />
+      
+                              <label class="text">Type: </label>
+                              <select>
+                                      <option class="option" value="Red-Flag">Red-Flag</option>
+                                      <option class="option" value="Intervention">Intervention</option>
+                              </select><br>
+                              <button class="subbtn">SUBMIT</button>
+                    </form>
+            </div>
+
+</body>
+
+</html>

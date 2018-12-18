@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>irepoter.com</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+<style>
+    .maindiv li a{
+        color: white;
+
+    
+    }
+</style>
+<body>
+        <header>
+                <div class="lgo">iReporter</div>
+                <div class="maindiv">
+                    <ul>
+                        <li><a href="loginpage.html" > CLICK TO LOGIN</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="navmenu">
+                    <button onclick="myFunction()" class="dropdwnbtn">&#9776;</button>
+                    <div id="mymenu" class="maindiv2">
+                        <ul>
+                        <li><a href="mainhome.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="administrator.html">Administration</a></li> 
+                        <li><a href="mainhome.html">Create</a></li>
+                        <li><a href="flagedusers.html">View</a></li>
+                        <li><a href="index.html">LOGOUT</a></li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </header>
+            <hr>
+            <div class="wrapper">
+                    <divclass="formcontainer"> 
+                    <form class="mainform" action="#">
+                            
+                              <h1>Sign Up</h1>
+                              <p>Please fill in this form to create an account.</p>
+                              <hr>
+                              <label for="name"><b>Name:</b></label>
+                              <input type="text" placeholder="Enter Fullname" name="email" required>
+
+                              <label for="name"><b>Username</b></label>
+                              <input type="text" placeholder="Enter your user name" name="email" required>
+
+                              <label for="email"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" name="email" required>
+                        
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                              <label for="psw-repeat"><b>Repeat Password</b></label>
+                              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                              
+                              <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:10px"> Remember me
+                              </label>
+                        
+                              <div class="subcncel">
+                                <button type="button" onclick="" class="cancelbtn" style="font-size:20px;">Cancel</button>
+                                <button type="submit" class="signupbtn" formaction="loginpage.html" style="font-size:20px;">Sign Up</button>
+                            </div>
+                          </form>
+                        </div>
+                
+            </div>
+
+     
+</body>
+
+</html>
